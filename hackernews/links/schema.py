@@ -1,18 +1,16 @@
 import graphene
-
 from graphene_django import DjangoObjectType
 
-#schema importations
+from .models import Link
 
-from .models import Link 
 
-class LinkType(DjangoObjectType)
+class LinkType(DjangoObjectType):
     class Meta:
-        model = link
+        model = Link
 
 
-class Query (graphene.ObjectType):
+class Query(graphene.ObjectType):
     links = graphene.List(LinkType)
 
-    def resolve_links (self, info, **kwargs):
-        return Link.Objects.all()
+    def resolve_links(self, info, **kwargs):
+        return Link.objects.all()

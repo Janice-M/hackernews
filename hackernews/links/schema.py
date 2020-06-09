@@ -11,4 +11,8 @@ class LinkType(DjangoObjectType)
         model = link
 
 
-    
+class Query (graphene.ObjectType):
+    links = graphene.List(LinkType)
+
+    def resolve_links (self, info, **kwargs):
+        

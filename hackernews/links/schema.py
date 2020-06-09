@@ -4,4 +4,11 @@ from graphene_django import DjangoObjectType
 
 #schema importations
 
-from .models impor
+from .models import Link 
+
+class LinkType(DjangoObjectType)
+    class Meta:
+        model = link
+
+
+    

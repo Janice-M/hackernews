@@ -16,7 +16,7 @@ class Query(graphene.ObjectType):
         return Link.objects.all()
 
 
-#1 first mutation
+#define your mutation class
 
 class CreateLink(graphene.Mutation):
     id = graphene.Int()
@@ -24,7 +24,7 @@ class CreateLink(graphene.Mutation):
     description = graphene.String()
 
 
-# second mutation
+# the kind of data in the server
 
 class Arguments:
     url = graphene.String()

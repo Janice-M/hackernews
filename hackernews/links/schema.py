@@ -31,8 +31,8 @@ class CreateLink(graphene.Mutation):
         description = graphene.String()
 
     def mutate (self,info,url,description):
-    link = Link(url=url, description=description)
-    link.save()
+        link = Link(url=url, description=description)
+        link.save()
 
     return CreateLink(
         id= link.id

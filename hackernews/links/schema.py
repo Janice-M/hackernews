@@ -26,11 +26,11 @@ class CreateLink(graphene.Mutation):
 
 # the kind of data in the server
 
-class Arguments:
-    url = graphene.String()
-    description = graphene.String()
+    class Arguments:
+        url = graphene.String()
+        description = graphene.String()
 
-def mutate (self,info,url,description):
+    def mutate (self,info,url,description):
     link = Link(url=url, description=description)
     link.save()
 

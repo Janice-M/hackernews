@@ -39,3 +39,9 @@ def mutate (self,info,url,description):
         url = link.url
         description = link.description
     )
+
+
+#mutation complete
+
+class Mutation(graphene.ObjectType):
+    create_link = CreateLink()

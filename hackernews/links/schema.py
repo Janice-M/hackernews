@@ -44,4 +44,4 @@ class CreateLink(graphene.Mutation):
 #points to created mutation
 
 class Mutation(graphene.ObjectType):
-    create_link = CreateLink()
+    create_link = CreateLink.Field()

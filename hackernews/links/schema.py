@@ -41,7 +41,7 @@ def mutate (self,info,url,description):
     )
 
 
-#mutation complete
+#link enters database
 
 class Mutation(graphene.ObjectType):
     create_link = CreateLink()

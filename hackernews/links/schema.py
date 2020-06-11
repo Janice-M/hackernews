@@ -14,3 +14,11 @@ class Query(graphene.ObjectType):
 
     def resolve_links(self, info, **kwargs):
         return Link.objects.all()
+
+
+#1 first mutation
+
+class CreateLink(graphene.Mutation):
+    id = graphene.Int()
+    url = graphene.String()
+    description = graphene.String ()

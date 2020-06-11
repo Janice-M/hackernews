@@ -34,11 +34,11 @@ class CreateLink(graphene.Mutation):
         link = Link(url=url, description=description)
         link.save()
 
-    return CreateLink(
-        id= link.id
-        url = link.url
-        description = link.description
-    )
+        return CreateLink(
+            id= link.id
+            url = link.url
+            description = link.description
+        )
 
 
 #points to created mutation

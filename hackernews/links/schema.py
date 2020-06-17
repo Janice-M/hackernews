@@ -21,7 +21,7 @@ class Query(graphene.ObjectType):
 class CreateLink(graphene.Mutation):
     id = graphene.Int()
     url = graphene.String()
-    description = graphene.String
+    description = graphene.String()
 
 
 # the kind of data in the server

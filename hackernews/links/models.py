@@ -2,6 +2,6 @@ from django.db import models
 
 # Create your models here.
 
-class Link(models.del):
+class Link(models.Model):
     url = models.URLField()
     description = models.TextField(blank=True)

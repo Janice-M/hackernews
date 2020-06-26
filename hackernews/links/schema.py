@@ -6,7 +6,7 @@ from .models import Link
 
 class LinkType(DjangoObjectType):
     class Meta:
-        model = Link
+        model = L
 
 
 class Query(graphene.ObjectType):

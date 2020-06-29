@@ -18,19 +18,20 @@ class Query(graphene.ObjectType):
 
 #define your mutation class
 
+# ...code
+#1
 class CreateLink(graphene.Mutation):
     id = graphene.Int()
     url = graphene.String()
     description = graphene.String()
 
-
-# the kind of data in the server
-
+    #2
     class Arguments:
         url = graphene.String()
         description = graphene.String()
 
-      def mutate(self, info, url, description):
+    #3
+    def mutate(self, info, url, description):
         link = Link(url=url, description=description)
         link.save()
 
@@ -41,7 +42,6 @@ class CreateLink(graphene.Mutation):
         )
 
 
-#points to created mutation
-
+#4
 class Mutation(graphene.ObjectType):
     create_link = CreateLink.Field()

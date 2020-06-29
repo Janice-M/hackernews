@@ -1,5 +1,5 @@
 import graphene
-
+import graphql_jwt
 import links.schema
 import users.schema
 

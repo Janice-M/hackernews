@@ -1,6 +1,7 @@
 import graphene
 
 import links.schema
+import users.schema
 
 
 class Query(links.schema.Query, graphene.ObjectType):

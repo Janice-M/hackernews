@@ -32,3 +32,6 @@ clas Mutation (graphene.ObjectType):
 
 class Query(graphene.ObjectType):
     users = graphene.List(UserType)
+
+    def resolve_users(self, info):
+        return get_user_model().objects.all()

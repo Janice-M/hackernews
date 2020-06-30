@@ -54,3 +54,6 @@ class Mutation(graphene.ObjectType):
 class CreateVote(graphene.Mutation):
     user=graphene.Field(UserType)
     link= graphene.Fiels(LinkType)
+
+    class Arguments :
+        link_id =graphene.Int()

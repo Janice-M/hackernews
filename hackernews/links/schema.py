@@ -24,6 +24,7 @@ class CreateLink(graphene.Mutation):
     id = graphene.Int()
     url = graphene.String()
     description = graphene.String()
+    posted_by = graphene.Field (UserType)
 
     #2
     class Arguments:

@@ -19,6 +19,9 @@ class Query(graphene.ObjectType):
     def resolve_links(self, info, **kwargs):
         return Link.objects.all()
 
+    ef resolve_votes(self, info, **kwargs):
+        return Vote.objects.all()
+
 
 #define your mutation class
 

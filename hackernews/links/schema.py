@@ -18,10 +18,10 @@ class Query(graphene.ObjectType):
     links = graphene.List(LinkType, search = ghraphene.String())
     votes = graphene.List(VoteType)
 
-    def resolve_links(self, info, **kwargs):
+    def resolve_links(self, info,search=None, * **kwargs):
         return Link.objects.all()
 
-    ef resolve_votes(self, info, **kwargs):
+    ef resolve_votes(self, info, *kwargs):
         return Vote.objects.all()
 
 

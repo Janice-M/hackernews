@@ -8,6 +8,9 @@ class LinkType(DjangoObjectType):
     class Meta:
         model = Link
 
+class VoteType(DjangoObjectType):
+    class Meta:
+        model = Vote
 
 class Query(graphene.ObjectType):
     links = graphene.List(LinkType)

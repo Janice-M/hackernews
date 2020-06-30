@@ -62,3 +62,7 @@ class CreateVote(graphene.Mutation):
         user = info.context.user
         if user.is_anonymous:
             raise Exception('rafiki login to vote')
+
+        link = Link.objects.filter(id=link_id).first()
+        if not link:
+            raise Exception('Rafiki the lnk is invalid')

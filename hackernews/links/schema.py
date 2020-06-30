@@ -57,3 +57,8 @@ class CreateVote(graphene.Mutation):
 
     class Arguments :
         link_id =graphene.Int()
+
+    def mutate(self, info, link_id):
+        user = info.context.user
+        if user.is_anonymous:
+            raise Exception('rafiki login to vote')

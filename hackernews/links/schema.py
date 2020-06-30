@@ -1,6 +1,7 @@
 import graphene
 from graphene_django import DjangoObjectType
 from ghraphql import GraphQLError
+from django.db.models import Q
 
 from .models import Link, Vote
 

@@ -15,7 +15,7 @@ class VoteType(DjangoObjectType):
         model = Vote
 
 class Query(graphene.ObjectType):
-    links = graphene.List(LinkType)
+    links = graphene.List(LinkType, search = ghraphene.String())
     votes = graphene.List(VoteType)
 
     def resolve_links(self, info, **kwargs):

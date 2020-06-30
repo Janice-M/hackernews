@@ -47,8 +47,7 @@ class CreateLink(graphene.Mutation):
 
 
 #4
-class Mutation(graphene.ObjectType):
-    create_link = CreateLink.Field()
+
 
 
 class CreateVote(graphene.Mutation):
@@ -73,3 +72,8 @@ class CreateVote(graphene.Mutation):
         )
 
         return CreateVote(user=user, link=link)
+
+
+class Mutation(graphene.ObjectType):
+    create_link = CreateLink.Field()
+    create_vote = CreateVote.Field()

@@ -21,7 +21,7 @@ class Query(graphene.ObjectType):
     def resolve_links(self, info,search=None, * **kwargs):
         
 
-    ef resolve_votes(self, info, *kwargs):
+    def resolve_votes(self, info, *kwargs):
         return Vote.objects.all()
 
 

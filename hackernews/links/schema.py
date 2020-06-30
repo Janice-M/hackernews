@@ -66,3 +66,10 @@ class CreateVote(graphene.Mutation):
         link = Link.objects.filter(id=link_id).first()
         if not link:
             raise Exception('Rafiki the lnk is invalid')
+
+        Vote.objects.create(
+            user=user,
+            link=link,
+        )
+
+        return CreateVote(user=user, link=link)

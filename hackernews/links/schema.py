@@ -22,7 +22,7 @@ class Query(graphene.ObjectType):
         
         if search :
             filter = (
-                Q(url__icontains= search)|
+                Q(url__icontains= search)
                 Q(description__icontains=search)
             )
             return Links.objects.filter(filter)

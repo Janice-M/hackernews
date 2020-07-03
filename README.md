@@ -2,6 +2,10 @@
 
  This application uses graphene and Graphene-Django, exposing a simple and powerful API for creating GraphQL servers. 
  
+ ## Getting Started 
+
+ * `git clone https://github.com/Janice-M/hackernews.git`
+ 
  ## GraphQL servers 
  * Receive requests using specified GraphQL syntax
  * connect databases/services that are responsible for storing or fetching data

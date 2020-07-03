@@ -32,6 +32,6 @@ class RelayQuery(graphene.ObjectType):
 class RelayCreateLink(graphene.relay.ClientIDMutation):
     link = graphene.Field(LinkNode)
 
-    class Input:
+    class :
         url = graphene.String()
         description = graphene.String()

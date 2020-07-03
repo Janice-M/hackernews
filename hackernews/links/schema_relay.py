@@ -35,3 +35,15 @@ class RelayCreateLink(graphene.relay.ClientIDMutation):
     class :
         url = graphene.String()
         description = graphene.String()
+
+    def mutate_and_get_payload(root, info, **input):
+        user = info.context.user or None
+
+        link = Link(
+            url=input.get('url'),
+            description=input.get('description'),
+            posted_by=user,
+        )
+        link.save()
+
+        return RelayCreateLink(link=link)

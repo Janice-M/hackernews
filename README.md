@@ -10,7 +10,8 @@
  * `Install python 3`
  * `Install pip`
  * `Install virtualenv`
- * To create virtual: `python3 -m venv (name of your vitrual mine was 'apeshit')`
+ * To create virtual: `python3 -m venv (name of your vitrual mine was 'bluebie')`
+ * then activate your virtual `source bluebie/bin/activate`
 
  ## Installations and dependencies 
 

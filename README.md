@@ -15,4 +15,4 @@
 
 * Define your types and the appropriate queries and mutations for them.
 * Implement functions called resolvers to handle these types and their fields.
-* keep doing step one and two as you figure shit out
+* keep doing step one and two as you figure shit out :woman_mechanic:

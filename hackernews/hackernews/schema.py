@@ -5,7 +5,12 @@ import users.schema
 import links.schema_relay
 
 
-class Query(users.schema.Query, links.schema.Query, graphene.ObjectType):
+class Query(
+    users.schema.Query,
+    links.schema.Query,
+    links.schema_relay.RelayQuery,
+    graphene.ObjectType,
+):
     pass
 
 

@@ -36,3 +36,9 @@
 ## tests 
 
 * no tests were written
+
+## Built With 
+
+* Django
+* Graphene Django
+* Django-GraphQL-JWT

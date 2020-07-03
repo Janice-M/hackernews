@@ -4,8 +4,8 @@
  
  ## Getting Started 
 
- * `git clone https://github.com/Janice-M/hackernews.git`
- 
+ * `git clone` https://github.com/Janice-M/hackernews.git
+
  ## GraphQL servers 
  * Receive requests using specified GraphQL syntax
  * connect databases/services that are responsible for storing or fetching data

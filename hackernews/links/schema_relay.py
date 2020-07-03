@@ -17,7 +17,7 @@ class LinkNode(DjangoObjectType):
         model = Link
         interfaces = (graphene.relay.Node, )
 
-
+#3
 class VoteNode(DjangoObjectType):
     class Meta:
         model = Vote

@@ -28,3 +28,10 @@ class RelayQuery(graphene.ObjectType):
     relay_link = graphene.relay.Node.Field(LinkNode)
     #5
     relay_links = DjangoFilterConnectionField(LinkNode, filterset_class=LinkFilter)
+
+class RelayCreateLink(graphene.relay.ClientIDMutation):
+    link = graphene.Field(LinkNode)
+
+    class Input:
+        url = graphene.String()
+        description = graphene.String()

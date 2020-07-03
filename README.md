@@ -10,7 +10,12 @@
  * `Install python 3`
  * `Install pip`
  * `Install virtualenv`
- * To create virtual: `python3 -m venv (name of your vitrual)`
+ * To create virtual: `python3 -m venv (name of your vitrual mine was 'apeshit')`
+
+ ## Installations and dependencies 
+
+ * run `pip install -r requirements.txt`
+
 
  ## GraphQL servers 
  * Receive requests using specified GraphQL syntax
@@ -26,3 +31,7 @@
 * Define your types and the appropriate queries and mutations for them.
 * Implement functions called resolvers to handle these types and their fields.
 * keep doing step one and two as you figure shit out :woman_mechanic:
+
+## tests 
+
+* no tests were written

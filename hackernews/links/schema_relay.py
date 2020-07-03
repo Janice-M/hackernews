@@ -22,3 +22,9 @@ class VoteNode(DjangoObjectType):
     class Meta:
         model = Vote
         interfaces = (graphene.relay.Node,)
+
+class RelayQuery(graphene.ObjectType):
+    #4
+    relay_link = graphene.relay.Node.Field(LinkNode)
+    #5
+    relay_links = DjangoFilterConnectionField(LinkNode, filterset_class=LinkFilter)

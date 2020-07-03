@@ -6,6 +6,12 @@
 
  * `git clone` https://github.com/Janice-M/hackernews.git
 
+ ## Create a virtual environment 
+ * `Install python 3`
+ * `Install pip`
+ * `Install virtualenv`
+ * To create virtual: `python3 -m venv (name of your vitrual)`
+
  ## GraphQL servers 
  * Receive requests using specified GraphQL syntax
  * connect databases/services that are responsible for storing or fetching data

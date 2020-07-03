@@ -10,3 +10,10 @@ class LinkFilter(django_filters.FilterSet):
     class Meta:
         model = Link
         fields = ['url', 'description']
+
+    #2
+class LinkNode(DjangoObjectType):
+    class Meta:
+        model = Link
+        #3
+        interfaces = (graphene.relay.Node, )
